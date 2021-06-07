@@ -15,7 +15,6 @@
     <title>Pertemuan 13</title>
   </head>
   <body>
-    
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
@@ -31,12 +30,8 @@
           </div>
         </div>
       </nav>
+    </header>
       <main>
-        <script type="text/javascript">
-          $(document).ready(function()) {
-            $('tabel-data').DataTable();
-          } ;
-          </script>
         <div class="container mt-3">
           <div class="row d-flex justify-counter-center">
             <div class="col-sm-9">
@@ -89,8 +84,5 @@
         });
       </script>
     </header>
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.datatables.min.css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/1.10.24/js/jquery.D]dataTables.min.js"></script>
   </body>
 </html>

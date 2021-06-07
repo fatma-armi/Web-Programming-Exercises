@@ -83,18 +83,7 @@
 	  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
 	  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap5.min.js"></script>
 
-	  <script type="text/javascript">
-	    $(document).ready(function(){
-	      $('#tabel-data').DataTable({
-	        'info': false, 
-	        'order': [2,"desc"]
-	      });
-	    });
-	  </script>
     </header>
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.datatables.min.css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/1.10.24/js/jquery.D]dataTables.min.js"></script>
     <script type="text/javascript">
     $(document).ready(function(){
       $('#tabel-data').DataTable({
