@@ -12,6 +12,9 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap5.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
 
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
+
     <title>Pertemuan 13</title>
   </head>
   <body>
@@ -56,7 +59,7 @@
                     <tbody>
                       <?php
                       include 'koneksi.php';
-                      $tma = mysqli_query($koneksi,"select *from tma");
+                      $tma = mysqli_query($koneksi,"select *from tma ORDER BY waktu DESC");
                       while($row = mysqli_fetch_array($tma))
                       {
                         echo "<tr>
@@ -76,6 +79,18 @@
 		</div>
 	</div>
 	</main>
+	 <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+	  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap5.min.js"></script>
+
+	  <script type="text/javascript">
+	    $(document).ready(function(){
+	      $('#tabel-data').DataTable({
+	        'info': false, 
+	        'order': [2,"desc"]
+	      });
+	    });
+	  </script>
     </header>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.datatables.min.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
